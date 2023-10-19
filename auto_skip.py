@@ -9,7 +9,6 @@ images = os.listdir(image_dir)
 # get screen center
 screen_width, screen_height = pyautogui.size()
 
-
 def click_image(image_center):
     # click on image center
     pyautogui.moveTo(image_center)
@@ -31,5 +30,7 @@ def check_and_click():
             break
     time.sleep(0.25)
 
-while True:
-    check_and_click()
+
+if __name__ == "__main__":
+    while True:
+        check_and_click()
